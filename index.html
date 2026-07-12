@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Conveter </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+    <h2>Currency Conveter</h2>
+    <form action="">
+
+        <div class="amount">
+            <p>Enter Your Amount:</p>
+            <input value="100" type="text">
+        </div>
+
+        <div class="dropdown">
+           
+            <div class="from">
+                <p>From:</p>
+                <div class="special">
+                <img src="https://flagsapi.com/US/flat/64.png">
+                <select name="from" id="from"></select>
+                </div>
+            </div>
+
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+            <div class="to">
+                <p>To:</p>
+                <div class="special">
+                <img src="https://flagsapi.com/IN/flat/64.png">
+                <select name="to" id="to"></select>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="msg">1 USD = 94 INR</div>
+        <button>To Exchange</button>
+    </form>
+    </div>
+    <script src="code.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

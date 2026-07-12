@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* Yeh line har element ko responsive rakhne me madad karegi */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/011/129/149/non_2x/3d-rendering-dollars-falling-currency-wealth-banknote-paper-currency-free-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* Background image mobile par center rahegi */
+    padding: 20px;
+    /* Mobile screens ke edges par thodi breathing space ke liye */
+}
+
+.container {
+    background-color: rgb(218, 188, 205);
+    padding: 40px 30px;
+    /* Padding ko thoda optimize kiya hai */
+    width: 100%;
+    /* Mobile screen ke hisab se width automatic stretch hogi */
+    max-width: 360px;
+    /* Kisi bhi bade phone ya desktop par isse zyada bada nahi hoga */
+    height: auto;
+    /* Fixed height hata di taaki content crash na ho */
+    border-radius: 10px 10px 30px 30px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+    text-align: center;
+    margin-top: -40px;
+    /* Padding top ke barabar adjust kiya */
+    margin-left: -30px;
+    /* Padding left ke barabar taaki edge tak touch ho */
+    margin-right: -30px;
+    /* Padding right ke barabar */
+    background-color: rgb(35, 53, 58);
+    color: white;
+    text-shadow: 3px 6px 14px yellow;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px 10px 0 0;
+    padding: 12px 0;
+}
+
+form input,
+form button {
+    width: 100%;
+    /* Input aur Button ab container ke andar 100% fit baithenge */
+    border: 2px solid rgb(0, 0, 0);
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.amount {
+    padding-top: 33px;
+}
+
+.amount p {
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    margin-bottom: 8px;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 10px;
+    /* Dono dropdowns ke beech mobile par gap banaye rakhne ke liye */
+}
+
+.from img,
+.to img {
+    max-width: 2rem;
+}
+
+.from,
+.to {
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Dropdown select box ka outer container */
+.special {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid black;
+    width: 95px;
+    /* Dropdown box ki width short rakhi hai taaki screen par fit aaye */
+    height: 53px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+form select {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    background: transparent;
+    padding: 0 5px;
+    outline: none;
+    font-weight: bold;
+}
+
+.msg {
+    margin-top: 35px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    /* Message center me badhiya dikhega */
+}
+
+button {
+    margin-top: 25px;
+    background-color: rgb(1, 22, 50);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    border: 3px solid black;
+    background-color: rgb(10, 35, 70);
+}
+
+i {
+    color: rgb(0, 0, 0);
+}
